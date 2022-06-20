@@ -1,0 +1,141 @@
+#main {
+}
+
+#details {
+    width: 100%;
+    background-color: white;
+    vertical-align: center;
+    background-size: cover;
+    color: #110014;
+    padding: 50px 10px;
+    font-size: 20px;
+    position:relative;
+    height: 600px;
+    font-family: "Arial Black";
+}
+
+.emp-letter1 {
+    font-size: 60px;
+    color: #efffff;
+}
+
+.emp-letter1:hover {
+    font-size: 60px;
+    color: purple;
+}
+
+.emp-letter2 {
+    font-size: 45px;
+    color: #651278;
+    width: 100%;
+    font-family: "AR ESSENCE";
+    position: relative;
+    left: 35%;
+}
+
+.nav {
+    color: black;
+}
+
+.nav-item {
+    padding: 7%;;
+    color: white;
+    font-size: 20px;
+    background-color: #00000000;
+    border: 1px transparent;
+}
+
+.nav-item:hover {
+    background-color: #11111111;
+    color: #d45a08;
+}
+
+#title {
+    padding-left: 25%;
+    font-size: 30px;
+}
+
+#nav {
+    background-color: rgba(16, 48, 255, 0.29);
+    background-image: url("images/Slide2.JPG");
+    height: 720px;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #100110;
+}
+
+p, li {
+    font-size: large;
+}
+
+p {
+    text-space: 10px;
+}
+
+#Heading {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    height: 600px;
+    color: white;
+    font-size: 50px;
+}
+
+#head {
+    vertical-align: center;
+}
+
+#Enroll-button {
+    background-color: #d45a08;
+    font-size: 45px;
+    width: fit-content;
+    border: transparent;
+    padding: 15px;
+    border-radius: 7px;
+    color: #efffff;
+
+    align-self: center;
+}
+
+#Enroll-button:hover {
+    background-color: white;
+    color: orange;
+}
+
+rule {
+    font-size: 20px;
+    display: block;
+    text-indent: 50px;
+    font-family: "Arial Black", monospace;
+}
+
+rule::after {
+    content: "\a";
+}
+rule::before {
+    content: "\000009\000009\002022\000009";
+    font-size: larger;
+}
+
+#treasure {
+    align-self: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 10%;
+    font-size: 25px;
+    position: relative;
+    height: 1000px;
+    width: available;
+    background-image: url("images/treasurehunt.png");
+}
+
+#rules {
+    position: relative;
+    left: 15%;
+}

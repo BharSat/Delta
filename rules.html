@@ -1,180 +1,74 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+          integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css"
+          integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
-		<script id="code">
-			register_page =  function () {
-				window.location.href = window.location.href.replace("/rules.html", "/register.html")
-			}
-			home_page = function () {
-				window.location.href = window.location.href.replace("/rules.html", "/index.html");
-			}
-			$(document).ready(function () {
+    <script crossorigin="anonymous"
+            integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+            referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+	<title> Rules - Goonj Delta </title>
+</head>
+<body>
+<div id="main">
+    <div id="nav">
+        <div class="row nav" id="nav-bar">
+            <div class="col-md-4">
+                <h1 id="title" onclick="home_page()"><b class="emp-letter1">GoonJ Delta </b></h1>
+            </div>
 
-			});
-		</script>
-		<style>
-		    #main {
-				background-image: url("images/background.jpg");
-				background-size: cover;
-		    }
-		    .emp-letter1 {
-		        font-size: 60px;
-		        color: #efffff;
-		    }
+            <div class="col-md-4"></div>
 
-			.emp-letter2 {
-		        font-size: 45px;
-		        color: #d45a08;
-		    }
+            <div class="col-md-4">
 
-		    .nav {
-		        color: black;
-		    }
-		    .nav-item {
-		        padding: 7%;;
-		        color: white;
-		        font-size: 20px;
-				background-color: #00000000;
-				border: 1px transparent;
-		    }
-		    .nav-item:hover {
-		        background-color: #11111111;
-		        color: #d45a08;
-		    }
-		    #title {
-				padding-left: 25%;
-				font-size: 30px;
-			}
-			#nav {
-				background-color: rgba(16,48,255,0.29);
-				background-image: url("images/Slide2.JPG");
-				height: 720px;
-				background-size: cover;
-			}
-			#body {
-				height: 100%;
-				padding: 1% 25%;
-		        color: black;
-			}
-			li {
-				font-size: 15px;
-				padding: 5px;
-			}
-			p, h2, h1 {
-				padding: 5px;
-			}
-			p, li{
-				font-size: large;
-			}
-			p {
-				text-space: 10px;
-			}
-			#Heading {
-				display: flex;
-				justify-content: center;
-				align-content: center;
-				text-align: center;
-				flex-direction: column;
-				height: 600px;
-				color: white;
-			}
-			#head {
-				vertical-align: center;
-			}
-		    
-		</style>
-	</head>
-	<body>
-	<div id="main">
-		<div id="nav">
-			<div id="nav-bar" class="row nav">
-				<div class="col-md-4">
-				<h1 id="title" onclick="home_page()"><b class="emp-letter1">GoonJ Delta </b></h1>
-				</div>
+                <button class="nav-item" id="home-button" name="home-button" onclick="home_page()">Home</button>
+                <button class="nav-item" id="register-button" name="register-button" onclick="register_page()">
+                    Register
+                </button>
+                <button class="nav-item" id="about-button" name="about-button" onclick="about_sec()">About</button>
+            </div>
+        </div>
+        <div id="head">
+            <h1 id="Heading">
+                The Hands on activity for students,<br>
+                <span style="font-size: 40px;">
+						Hosted by NPS YPR
+					</span><br>
+                Come Join Us on 5/7/2022<br><br>
+                <button id="Enroll-button" onclick="register_page()"> Enroll Now!</button>
+            </h1>
+        </div>
+    </div>
 
-				<div class="col-md-4"></div>
-
-				<div class="col-md-4">
-
-				<button id="home-button" class="nav-item" name="home-button" onclick="home_page()">Home</button>
-				<button id="register-button" class="nav-item" name="register-button" onclick="register_page()">Register</button>
-				<button id="about-button" class="nav-item" name="about-button">About</button>
-			  </div>
-			</div>
-			<div id="head">
-				<h1 id="Heading">The Hands on activity for students, Hosted by NPS YPR<br>
-					<span style="color: orange; size: 20px" onclick="register_page()"> Enroll Now!</span>
-				</h1>
-			</div>
-		</div>
-
-		<div id="body">
-			<div id = "Rules" style="background: white;">
-		<h1>Welcome to <b class="emp-letter2">GOONJ - Delta</b> (Science)</h1>
-				<p>
-					For <b>GOONJ - Delta</b>,
-				</p>
-				<h2>Rules</h2>
-				<ol>
-					<li>
-						Rule 1
-					</li>
-					<li>
-						Rule 2
-					</li>
-					<li>
-						Rule 3
-					</li>
-					<li>
-						Rule 1
-					</li>
-					<li>
-						Rule 2
-					</li>
-					<li>
-						Rule 3
-					</li>
-					<li>
-						Rule 1
-					</li>
-					<li>
-						Rule 2
-					</li>
-					<li>
-						Rule 3
-					</li>
-					<li>
-						Rule 1
-					</li>
-					<li>
-						Rule 2
-					</li>
-					<li>
-						Rule 3
-					</li>
-				</ol>
-				<h2>Additional Info</h2>
-				<ol>
-					<li>
-						Info 1
-					</li>
-					<li>
-						Info 2
-					</li>
-					<li>
-						Info 3
-					</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-	</body>
+    <div id="body">
+        <div id="treasure">
+            <div class="text">
+                <h2 class="emp-letter2" style="color: #efffff"><a name="6-8">Treasure Hunt - Class 6-8</a></h2>
+                <br><br><br>
+                <div id="rules">
+                    <h3> Rules</h3>
+                    <rule>a</rule>
+                    <rule>s</rule>
+                    <rule>c</rule>
+                    <rule>d</rule>
+                    <rule>e</rule>
+                    <rule>d</rule>
+                    <rule>c</rule>
+                    <rule>w</rule>
+                    <rule>v</rule>
+                    <rule>x</rule>
+                    <rule>z</rule>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
