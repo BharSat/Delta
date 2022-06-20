@@ -3,10 +3,10 @@
 
 #details {
     width: 100%;
-    background-color: white;
+    background-image: url("images/Slide3.jpg");
     vertical-align: center;
     background-size: cover;
-    color: #110014;
+    color: #fefeef;
     padding: 50px 10px;
     font-size: 20px;
     position:relative;
@@ -26,7 +26,7 @@
 
 .emp-letter2 {
     font-size: 45px;
-    color: #651278;
+    color: #d45a08;
     width: 100%;
     font-family: "AR ESSENCE";
     position: relative;
@@ -43,6 +43,7 @@
     font-size: 20px;
     background-color: #00000000;
     border: 1px transparent;
+    font-family: "Arial Black";
 }
 
 .nav-item:hover {
@@ -57,14 +58,14 @@
 
 #nav {
     background-color: rgba(16, 48, 255, 0.29);
-    background-image: url("images/Slide2.JPG");
+    background-image: url("images/Slide4.JPG");
     height: 720px;
     background-size: cover;
 }
 
 a {
     text-decoration: none;
-    color: #100110;
+    color: #d45a08;
 }
 
 p, li {
@@ -127,15 +128,36 @@ rule::before {
     align-self: center;
     background-size: cover;
     color: #ffffff;
-    padding: 10%;
+    padding: 5%;
     font-size: 25px;
     position: relative;
     height: min-content;
     width: available;
-    background-image: url("images/treasurehunt.png");
+    background-image: url("images/Slide5.jpg");
 }
 
-#rules {
+.rules {
     position: relative;
     left: 15%;
+}
+
+#event2 {
+    align-self: center;
+    background-size: cover;
+    color: #000000;
+    font-size: 25px;
+    position: relative;
+    height: auto;
+    width: available;
+    background-image: url("images/Slide6.jpg");
+}
+
+#Contacts {
+    background-size: cover;
+    color: #effeef;
+    padding: 1%;
+    font-size: 25px;
+    height: 50%;
+    width: available;
+    background-color: #000051;
 }
