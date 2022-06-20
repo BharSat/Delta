@@ -130,7 +130,7 @@ rule::before {
     padding: 10%;
     font-size: 25px;
     position: relative;
-    height: 1000px;
+    height: min-content;
     width: available;
     background-image: url("images/treasurehunt.png");
 }
