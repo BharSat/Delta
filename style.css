@@ -117,7 +117,7 @@ p {
 }
 
 rule {
-    font-size: 20px;
+    font-size: 30px;
     display: block;
     text-indent: 50px;
     font-family: "Arial Black", monospace;
@@ -130,6 +130,10 @@ rule::before {
     content: "\000009\000009\002022\000009";
     font-size: larger;
 }
+rule.sub::before {
+    content: "\000009\000009\002192\000009";
+    font-size: larger;
+}
 
 #treasure {
     align-self: center;
@@ -140,7 +144,7 @@ rule::before {
     position: relative;
     height: min-content;
     width: available;
-    background-image: url("images/Slide5.jpg");
+    background-image: url("images/Slide7.jpg");
 }
 
 .rules {
@@ -148,15 +152,15 @@ rule::before {
     left: 15%;
 }
 
-#event2 {
+#fun_fitness {
     align-self: center;
     background-size: cover;
-    color: #000000;
+    color: #feedfe;
     font-size: 25px;
     position: relative;
     height: auto;
     width: available;
-    background-image: url("images/Slide6.jpg");
+    background-image: url("images/Slide8.jpg");
 }
 
 #Contacts {
