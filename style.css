@@ -2,16 +2,17 @@
 }
 
 #details {
-    width: 100%;
-    background-image: url("images/Slide3.jpg");
+    background-image: url("images/Slide6.jpg");
     vertical-align: center;
     background-size: cover;
-    color: #fefeef;
+    color: #012012;
     padding: 50px 10px;
     font-size: 20px;
     position:relative;
-    height: 600px;
-    font-family: "Arial Black";
+    height: auto;
+    font-family: "Arial Black", cursive;
+    text-align: center;
+    align-self: center;
 }
 
 .emp-letter1 {
@@ -28,22 +29,28 @@
     font-size: 45px;
     color: #d45a08;
     width: 100%;
-    font-family: "AR ESSENCE";
+    font-family: "AR ESSENCE", serif;
     position: relative;
-    left: 35%;
+}
+
+h1.emp-letter2 {
+    font-size: 80px;
 }
 
 .nav {
     color: black;
+    position: relative;
 }
 
 .nav-item {
-    padding: 7%;;
+    position: relative;
+    padding: 3% 3%;
     color: white;
     font-size: 20px;
     background-color: #00000000;
     border: 1px transparent;
     font-family: "Arial Black";
+
 }
 
 .nav-item:hover {
@@ -161,3 +168,4 @@ rule::before {
     width: available;
     background-color: #000051;
 }
+

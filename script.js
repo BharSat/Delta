@@ -4,16 +4,17 @@ function getParentFolder(url) {
         let new_url = url.slice(0, ind)
         return new_url
 }
-console.log(getParentFolder())
+
 register_page = function () {
     window.location.href = getParentFolder() + "/register.html";
 }
 home_page = function () {
     window.location.href = getParentFolder() + "/index.html";
 }
-about_sec = function () {
-    window.location.href = getParentFolder() + "/index.html#about"
+sec = function (loc) {
+    window.location.href = getParentFolder() + "/index.html#" + loc
 }
 rules_page = function () {
     window.location.href = getParentFolder() + "/rules.html"
 }
+
